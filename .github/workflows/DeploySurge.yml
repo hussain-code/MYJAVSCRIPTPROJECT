@@ -1,0 +1,32 @@
+
+
+name: Deploy Project to surege
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+ 
+ build:
+    
+    runs-on: ubuntu-latest
+
+   
+    steps:
+    
+    - name: Installing Node
+    - uses: actions/setupp-node@v2-beta
+      with:
+        node-version: '12'  
+
+    - name: installaing surge
+      run: npm install --global surge
+      
+    - name: Deploying project to Surge
+      run:  surge ./ hussain-code_jspro.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      
+    
+  ...
