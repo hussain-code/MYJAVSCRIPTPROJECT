@@ -1,2 +1,2 @@
 # MYJAVSCRIPTPROJECT
- SOME SIMPLE JAVA SCRIPYS PROJECTS
+ This repository will contain 20 projects developed with HTML,CSS and JS
