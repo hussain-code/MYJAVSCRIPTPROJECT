@@ -1,46 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-:root{
+
+:root {
     --success-color: limegreen;
     --error-color: orangered;
 }
+
 * {
-box-sizing:border-box;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: hsla(0, 0%, 50%, 0.1);
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+}
 
-}
-.container{
+.container {
     background-color: white;
-    border-radius: 7px;
-    box-shadow: 0 2px 10px rgba(0, green, 0, 0.4);
-    width: 450px;   
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    width: 450px;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-bottom: 20px;
-
 }
-.form{
+
+.form {
     padding: 30px 40px;
 }
-.form-control{
+
+.form-control {
     margin-bottom: 10px;
-    padding-bottom: 20px
-    position relative;
+    padding-bottom: 20px;
+    position: relative;
 }
-.form-control label{
+
+.form-control label {
     color: gray;
     display: block;
     margin-bottom: 5px;
 }
-.form-control input{
+
+.form-control input {
     border: 2px solid lightgray;
     border-radius: 4px;
     display: block;
@@ -48,30 +55,36 @@ h2{
     padding: 10px;
     font-size: 14px;
 }
-.form-control input:focus{
+
+.form-control input:focus {
     outline: 0;
     border-color: gray;
 }
-.form-control.success input{
+
+.form-control.success input {
     border-color: var(--success-color);
 }
-.form-control.error input{
+
+.form-control.error input {
     border-color: var(--error-color);
 }
-.form-control small{
-    color;var(--error-color);
-    position; absolute;
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
 }
-.form-control. small{
+
+.form-control.error small {
     visibility: visible;
 }
-.form button{
+
+.form button {
     cursor: pointer;
-    background-color: rgb(143, 119, 119);
-    border: 2px solid rgb(143, 119, 119);
+    background-color: #3725f8;
+    border: 2px solid #3725f8;
     border-radius: 4px;
     color: white;
     display: block;
@@ -80,11 +93,11 @@ h2{
     margin-top: 20px;
     width: 100%;
 }
-button.home{
+
+button.home {
     cursor: pointer;
-    background-color: rgb(143, 119, 119);
-    border: 2px solid rgb(143, 119, 119);
-    border-radius: 4px;
+    background-color: lightgray;
+    border: 2px solid lightgray;
     color: white;
     display: block;
     font-size: 16px;
@@ -92,10 +105,11 @@ button.home{
     margin-top: 20px;
     width: 100%;
 }
-a
-{
+
+a {
     text-decoration: none;
 }
-nav{
+
+.nav {
     display: block;
 }
