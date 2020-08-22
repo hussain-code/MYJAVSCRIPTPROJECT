@@ -5,9 +5,37 @@
 }
 body{
 background-color: slategray;
-background-image: url("https://amymhaddad.s3.amazonaws.com/oriental-tiles.png");
+background-image: url("https://images.unsplash.com/photo-1549226024-48875665c1ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80");
 display: flex;
 flex-direction: column;
+color: white;
 align-items: center;
+justify-content: center;
+height: 100vh;
+font-family: 'lato',sans-serif;
+margin: 0;
+
+}
+.movie-container{
+  margin: 20px 0;  
+} 
+.movie-container select{
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+}
+.seat {
+    background-color: rgb(19, 14, 14);
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
