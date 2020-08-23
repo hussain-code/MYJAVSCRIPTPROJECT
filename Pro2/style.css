@@ -4,17 +4,15 @@
     box-sizing: border-box;
 }
 body{
-background-color: slategray;
-background-image: url("https://images.unsplash.com/photo-1549226024-48875665c1ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80");
+background-color: lightgrey;
 display: flex;
 flex-direction: column;
-color: white;
+color: rgb(37, 3, 3);
 align-items: center;
 justify-content: center;
 height: 100vh;
 font-family: 'lato',sans-serif;
 margin: 0;
-
 }
 .movie-container{
   margin: 20px 0;  
@@ -30,19 +28,19 @@ margin: 0;
     -webkit-appearance: none;
 
 }
-.seat {
-    background-color: rgb(19, 14, 14);
-    height: 12px;
-    width: 15px;
+.seat  {
+    background-color: green;
+    height: 20px;
+    width: 25px;
     margin: 3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .seat.selected{
-    background-color: aqua;
+    background-color: blue;
 }
 .seat.occupied{
-background-color: white;
+background-color: red;
 }
 .seat:nth-of-type(2) {
     margin-right: 20px; 
@@ -50,12 +48,12 @@ background-color: white;
 .seat:nth-last-of-type(2) {
     margin-left: 20px;
 }
-.seat:not(.occupied):hover{
-    cursor: pointer;
+.seat:not(.occupied):hover {
+    cursor: pointer; 
     transform: scale(1.2);
 }
 .legend {
-    background-color: rgba(0, 0, b0lue, 0.1);
+    background-color: rgba(0,0,0,0.7);
     padding: 5px 10px;
     border-radius: 5px;
     color: blue;
@@ -69,10 +67,9 @@ align-items: center;
 justify-content: center;
 }
 .legend li small {
-margin: 0 10px; 
+     margin: 0 10px; 
     margin-left: 2px;
 }
-
 .legend .seat:not(.occupied):hover {
     cursor: default;
     transform: scale(1);
