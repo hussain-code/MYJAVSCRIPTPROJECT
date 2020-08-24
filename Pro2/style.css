@@ -3,7 +3,7 @@
 *{
     box-sizing: border-box;
 }
-body{
+body {
 background-color: lightgrey;
 display: flex;
 flex-direction: column;
@@ -17,7 +17,7 @@ margin: 0;
 .movie-container{
   margin: 20px 0;  
 } 
-.movie-container select{
+.movie-container select {
     background-color: white;
     border: 10px;
     border-radius: 5px;
@@ -37,7 +37,7 @@ margin: 0;
     border-top-right-radius: 10px;
 }
 .seat.selected{
-    background-color: blue;
+    color: blue;
 }
 .seat.occupied{
 background-color: red;
