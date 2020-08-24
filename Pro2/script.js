@@ -1,14 +1,23 @@
 const container = document.querySelector('.container');
-const seats = document.querySelectorAll('.row .seat:not(.Occupied)');
+const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
-const movieselect = document.getElementById('movie');
-const ticketprice = +movieselect.Value; 
+const movieSelect = document.getElementById('movie');
+const ticketPrice = +movieSelect.value;
 
+//Function to update counts
+function updateSelectedcount() {
+    const selectedseats = document.querySelectorAll('row,seat,selected')
+    const countselectedseats = selectedseats.length
+    console.log(selectedseats);
+}
 
-// Event listner for click on available seat
+//Event listner for seats click for availab seats
 container.addEventListener('click', (e) => {
-    if(e.target.classlist.contains('seat') && !e.target.classlist.contains('Occupied'));{
-        console.log(e.target);
-    }
+ if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')){
+    e.target.classList.toggle('selected')
+    updateSelectedcount(); 
+ }
+
+    
 })
