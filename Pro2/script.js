@@ -11,6 +11,7 @@ function updateSelectedcount() {
     const countselectedseats = selectedseats.length;
     count.innerText = countselectedseats;
     count.innerText = ticketPrice * countselectedseats;
+    console.log(count.innerText);
 }
 //Event listner for seats click for availab seats
 container.addEventListener('click', (e) => {
@@ -18,4 +19,4 @@ container.addEventListener('click', (e) => {
     e.target.classList.toggle('selected')
     updateSelectedcount(); 
  }    
-})
+});
