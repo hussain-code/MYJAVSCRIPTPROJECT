@@ -37,7 +37,7 @@ margin: 0;
     border-top-right-radius: 10px;
 }
 .seat.selected{
-    color: blue;
+    color: lightgreen;
 }
 .seat.occupied{
 background-color: red;
