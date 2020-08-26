@@ -9,7 +9,6 @@ populateUI();
 
 //pull date from storage to build UI
 function populateUI() {
-    
 }
 //Function to update counts
 function updateSelectedcount() {
@@ -20,6 +19,7 @@ function updateSelectedcount() {
     count.innerText = countselectedseats;
     count.innerText = ticketPrice * countselectedseats;
 }
+//Function to save the selected movie and its Price
 // function to save the selected movies and data
 function setMovieData(movieindex,moviePrice) {
     localStorage.setItem('selectedmovieindex','movieindex');
