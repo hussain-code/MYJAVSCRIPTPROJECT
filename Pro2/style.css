@@ -54,7 +54,7 @@ background-color: red;
     transform: scale(1.2);
 }
 .legend {
-    background-color: blue;
+    background-color: gray;
     padding: 5px 10px;
     border-radius: 5px;
     color: lightgray;
@@ -95,7 +95,7 @@ p.text {
     margin: 5px 0;
 }
 p.text span {
-    color: rgb(255, 255, 255);
+    color: lawngreen;
 }
 
 
