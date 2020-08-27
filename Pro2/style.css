@@ -54,7 +54,7 @@ background-color: red;
     transform: scale(1.2);
 }
 .legend {
-    background-color: rgba(0,0,0,0.10);
+    background-color: blue;
     padding: 5px 10px;
     border-radius: 5px;
     color: lightgray;

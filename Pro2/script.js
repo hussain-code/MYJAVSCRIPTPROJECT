@@ -17,23 +17,25 @@ function populateUI() {
         }  
     });
 }
-    console.log(selectedseats);
-    if (selectedMovieindex.selectedindex = selectedMovieindex);
+    const selectedMovieindex = localStorage.getItem('selectedMovieindex');
+    if (selectedMovieindex !== null){
+        movieSelect.selectedindex = selectedMovieindex;
+    }
 }
 //Function to update counts
 function updateSelectedcount() {
     const selectedseats = document.querySelectorAll('row,seat,selected')
     const countselectedseats = selectedseats.length;
     const seatsindex =[...selectedseats].map(seat => [...seats].indexOf(seat));
-    localStorage.setItem('selectedseats',JSON.stringify('seats'));
+    localStorage.setItem('selectedseats',JSON.stringify('seatsindex'));
     count.innerText = countselectedseats;
     count.innerText = ticketPrice * countselectedseats;
 }
 //Function to save the selected movie and its Price
 // function to save the selected movies and data
 function setMovieData(movieindex,moviePrice) {
-    localStorage.setItem('selectedmovieindex','movieindex');
-    localStorage.setItem('selectedmovieprice','movieprice');
+    localStorage.setItem('selectedMovieindex','movieindex');
+    localStorage.setItem('selectedMovieprice','movieprice');
     }
     
 // Event listner for changeo select movie
@@ -49,3 +51,4 @@ container.addEventListener('click', (e) => {
     updateSelectedcount(); 
  }    
 })
+updateSelectedcount();
