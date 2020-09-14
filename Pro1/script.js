@@ -74,4 +74,5 @@ form.addEventListener('submit',function(e) {
     checkEmail(email);
     checkPasswordsMatch(password,password2);
 
-})
+})v
+vvvvvvv

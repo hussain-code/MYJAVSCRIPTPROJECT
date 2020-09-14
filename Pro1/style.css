@@ -42,14 +42,14 @@ h2 {
 }
 
 .form-control label {
-    color: gray;
+    color: black;
     display: block;
     margin-bottom: 5px;
 }
 
 .form-control input {
-    border: 2px solid lightgray;
-    border-radius: 4px;
+    border: 2px solid gray;
+       border-radius: 4px;
     display: block;
     width: 100%;
     padding: 10px;
