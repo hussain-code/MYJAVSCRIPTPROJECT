@@ -5,6 +5,7 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 //All Function
+//Function to Show error
 function showError(input,message) {
     const formcontrol = input.parentElement;
     formControl.className = 'form-control error';
@@ -15,7 +16,7 @@ form.addEventListener('submit',function(e) {
     e.preventDefault();
    
     if (username.value === '' ) {
-        showError(username,'Username is required')
+        showError(username);
     }
 
-})
+})  
