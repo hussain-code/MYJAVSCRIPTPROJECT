@@ -7,7 +7,8 @@
 *{
      box-sizing:  border-box;
         }
-  body {
+
+body {
 background: #dde1e7;
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -29,7 +30,7 @@ padding: 10px;
 
   }
   .form {
-      padding: 30px 40px;
+ padding: 30px 40px;
 
   }
 .form-control {
@@ -48,7 +49,7 @@ width: 100%;
 .form-control input {
     font-size: 14px;
     padding: 10px;
-    width: 200%;
+    width: 100%;
     display: block;
     border-radius: 4px;
     border: 2px solid lightgray;
@@ -63,7 +64,7 @@ width: 100%;
 .form-controler.Error input {
     border-color: var(--error-color);
 }
-.form-controle small {
+.form-controle success small {
     color: var(--error-color);
     position: absolute;
     bottom: 0;
@@ -71,7 +72,7 @@ width: 100%;
     visibility: hidden;
 }
 
-.form-controler.Error small{
+.form-controler error small{
     visibility: visible;
 }
 
@@ -85,7 +86,7 @@ width: 100%;
     font-size: 16px;
     padding: 10px;
     margin-top: 20px;
-    width: 200%;
+    width: 100%;
 }
 button.home {
     cursor: pointer;
@@ -94,7 +95,7 @@ button.home {
     color: white;
     display: flexbox;
     font-size: 16px;
-    width: 200%;
+    width: 100%;
   }
   a {
     text-decoration: none;
