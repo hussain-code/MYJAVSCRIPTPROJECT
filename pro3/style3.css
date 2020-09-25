@@ -3,7 +3,7 @@
 :root {
     --primary-color: black;
     --secondary-color: yellow;
-    --model-duration: 2s;
+    --model-duration: 10s;
 }
 * {
 box-sizing: border-box;
@@ -158,10 +158,10 @@ width: 800px;
     color: white;
 }
 @keyframes modelopen {
-    from{
+        from {
         opacity: 0;
     }
-    to {
+        to {
         opacity: 1;
     }
 }
