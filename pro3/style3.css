@@ -3,7 +3,7 @@
 :root {
     --primary-color: black;
     --secondary-color: yellow;
-    --model-duration: 10s;
+    --model-duration: 2s;
 }
 * {
 box-sizing: border-box;
