@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>hangman</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <P>Can you gues the hidden Word? Please enter a letter.</P>
+    <div class="game-container">
+    <!--platform-->
+    <svg height="250px" width="200px" class="figure-container">
+        <line x1="60" y1="20" x2="140" y2="20"/>
+        <line x1="140" y1="20" x2="140" y2="50"/>
+        <line x1="60" y1="20" x2="60" y2="230" />
+        <line x1="20" y1="230" x2="100" y2="230" />
+        <!--Head of Hangman-->
+        <circle cx="140" cy="70" r="20" Class="hangman-part" />
+        <!--Body of Hangman-->
+        <line x1="140" y1="90" x2="140" y2="150" Class="hangman-part"/>
+        <!--- Arms of hangman-->
+        <line x1="140" y1="120" x2="120" y2="100" Class="hangman-part"/>
+        <line x1="140" y1="120" x2="160" y2="100" Class="hangman-part"/>
+        <!---Legs of Hangman-->
+        <line x1="140" y1="150" x2="120" y2="180" Class="hangman-part"/>
+        <line x1="140" y1="150" x2="160" y2="180" Class="hangman-part"/> 
+    </svg>
+    <div class="wrong-letters">
+        <p>Worng Guesses</p>
+        <span>Z, X, Y, B</span>
+    </div>
+        <div class="word" id="word">
+        <div class="letter">h</div>
+        <div class="letter">e</div>
+        <div class="letter">l</div>
+        <div class="letter">o</div>
+        </div>
+    
+</div>
+<!---Container of the popup message-->
+<div class="popup-container" id="popup-container">
+    <div class="popup">
+        <h2 id="wind-lose">
+            You Win!
+         </h2>
+    <button id = "restart">
+        Restar Game
+    </button>
+    </div>
+</div>
+<div class="slider-container" id="slider-container">
+    <p> You Have already enter this letter.</p>
+</div>
+<script src="script4.js"></script>
+</body>
+</html>

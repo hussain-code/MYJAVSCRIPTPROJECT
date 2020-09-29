@@ -1,0 +1,13 @@
+body {
+    background-color: steelblue;
+    color: white;
+}
+.figure-container {
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    fill: transparent;
+}
+.hangman-part {
+    display: none;
+}
