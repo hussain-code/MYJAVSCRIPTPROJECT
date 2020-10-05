@@ -52,10 +52,24 @@ function showNotification() {
 }
 // fUNCTION TO uPDATE  INCORRECTLETTES
   function updateWorngletters() {
-    wrongletters,innerHTML = `
-    ${incorrectletters.length > 0 ? `<P>Wrong</P>` : '' }
-    ${incorrectletters.map (letter => `<span>${letter}</span>)`)}
-    `
+    wrongletters.innerHTML = `
+    ${incorrectletters.length > 0 ? `<P>Wrong</P>` : ''}
+    ${incorrectletters.map ( letter => `<span>${letter}</span>)`)}
+    `;
+    hangmanParts.forEach( (part,index) => {
+      const error = incorrectletters.length;
+      if (index < error ) {
+        part.style.display ='block';
+      } else {
+        part.style.display= 'none';
+      }
+    });
+    //SHOW POPUP IF LOST 
+    
+    if(incorrectletters.length === hangmanParts.length) {
+      message.innerText = 'you lost!';
+      popup.style.display = 'flex';
+    }
   }
 
 
