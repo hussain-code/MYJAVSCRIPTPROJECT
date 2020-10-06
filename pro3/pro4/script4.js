@@ -12,7 +12,7 @@ const wordPool = ['facebook','javascript','computer','hangman'];
 //selecting a word random from pool
 let selectedword = wordPool[Math.floor(Math.random() * wordPool.length)];
 //array to classify the  input of the letter
-const correctletters = ['a','b'];
+const correctletters = [];
 const incorrectletters = [];
 // functin to display the word on the screen
 
@@ -31,9 +31,7 @@ function displayselectedword() {
     } 
   `;
   const wordtext = word.innerText.replace(/\n/g,'');
- //console.log(word.innerText);
- //console.log(wordtext);
-
+ 
     if ( wordtext === selectedword ) {
       message.innerText = 'You win!';
       popup.style.display = 'flex';
@@ -53,9 +51,10 @@ function showNotification() {
 // fUNCTION TO uPDATE  INCORRECTLETTES
   function updateWorngletters() {
     wrongletters.innerHTML = `
-    ${incorrectletters.length > 0 ? `<P>Wrong</P>` : ''}
-    ${incorrectletters.map ( letter => `<span>${letter}</span>)`)}
+      ${incorrectletters.length > 0 ? `<P>WRONG</P>` : ''}
+      ${incorrectletters.map (letter => `<span>${letter}</span>`)}
     `;
+    // display hangman parts
     hangmanParts.forEach( (part,index) => {
       const error = incorrectletters.length;
       if (index < error ) {
@@ -72,7 +71,7 @@ function showNotification() {
     }
   }
 
-
+  
 //Event Handler
 //1. Event handler for keyboard button Press
 window.addEventListener('keydown', e => {
@@ -88,7 +87,7 @@ window.addEventListener('keydown', e => {
         showNotification();
       }
     } else {
-      if (! incorrecletters.includes(letter)) {
+      if (!incorrectletters.includes(letter)) {
         incorrectletters.push(letter);
         updateWorngletters();
       } else {
@@ -97,5 +96,22 @@ window.addEventListener('keydown', e => {
     }
   }
 })
+// 2. Event Listener for Restart Button
+restartButton.addEventListener('click', () => {
+  // Empty Arrays
+  correctLetters.splice(0);
+  incorrectLetters.splice(0);
 
+  // Get a new selected word from the pool
+  selectedWord = wordPool[Math.floor(Math.random() * wordPool.length)];
+
+  displaySelectedWord();
+
+  // Clear the Wrong Letters Div
+  updateWrongLetters();
+
+  // Hide the popup
+  popup.style.display = 'none';
+
+})
 displayselectedword();
