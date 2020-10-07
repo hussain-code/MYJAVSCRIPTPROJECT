@@ -99,17 +99,18 @@ window.addEventListener('keydown', e => {
 // 2. Event Listener for Restart Button
 restartButton.addEventListener('click', () => {
   // Empty Arrays
-  correctLetters.splice(0);
-  incorrectLetters.splice(0);
+  correctletters.splice(0);
+  incorrectletters.splice(0);
 
   // Get a new selected word from the pool
-  selectedWord = wordPool[Math.floor(Math.random() * wordPool.length)];
+  selectedword = wordPool[Math.floor(Math.random() * wordPool.length)];
 
   displaySelectedWord();
 
   // Clear the Wrong Letters Div
-  updateWrongLetters();
+  updateWorngletters();
 
+  
   // Hide the popup
   popup.style.display = 'none';
 
