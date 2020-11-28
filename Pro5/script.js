@@ -10,7 +10,10 @@ function  searchmeal(e) {
     e.preventDefault()
     //get the serch value from the input value
     const term =search.Value;
-    console.log(term);
+    // Chech if search term exists
+    if(term) {
+} else {
+    alert('Please enrer a valid search')
 }
 //Event listner
 //1.Submit
